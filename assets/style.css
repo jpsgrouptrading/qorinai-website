@@ -64,8 +64,9 @@ section.dark .btn-ghost:hover,section.navy .btn-ghost:hover,.hero .btn-ghost:hov
 .brand svg{width:34px;height:34px;flex:none}
 .wordmark{font-family:var(--display);font-weight:700;font-size:19px;letter-spacing:.14em;line-height:1;color:#fff}
 .wordmark .in{color:var(--grey)} .wordmark .ai{color:var(--cyan)}
-.nav-links{display:flex;gap:4px;font-size:14.5px;font-weight:500;color:#D5D9DE}
-.nav-links a{color:#D5D9DE;padding:9px 13px;border-radius:999px;transition:background .2s,color .2s}
+.nav-links{display:flex;gap:2px;font-size:14px;font-weight:500;color:#D5D9DE;white-space:nowrap}
+@media (max-width:1240px){.nav-links{font-size:13px}.nav-links a{padding:9px 9px}}
+.nav-links a{color:#D5D9DE;padding:9px 11px;border-radius:999px;transition:background .2s,color .2s}
 .nav-links a:hover{color:#fff;background:rgba(255,255,255,.08)}
 .nav-links a.active{color:#fff;background:rgba(255,255,255,.12)}
 .nav-cta{display:flex;align-items:center;gap:8px}

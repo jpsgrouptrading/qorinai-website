@@ -23,20 +23,12 @@
     document.getElementById('sent').hidden = false; form.querySelector('button[type=submit]').disabled = true;
   });
 
-  /* ---------- homepage video: try to autoplay with sound; browsers usually require a gesture, so unmute on first interaction ---------- */
+  /* ---------- homepage video: autoplays muted; sound only when the visitor clicks the button ---------- */
   var fv = document.getElementById('flagshipVideo');
   if (fv) {
     var btn = document.getElementById('soundBtn');
-    function setBtn() { if (btn) btn.textContent = fv.muted ? '🔇  Sound off — click to unmute' : '🔊  Sound on'; }
-    function tryUnmute() {
-      fv.muted = false; var p = fv.play();
-      if (p && p.catch) p.catch(function () { fv.muted = true; fv.play(); setBtn(); });
-      setBtn();
-    }
-    setBtn();
-    tryUnmute();
-    var once = function () { if (fv.muted) tryUnmute(); ['pointerdown', 'keydown', 'touchstart', 'wheel'].forEach(function (ev) { window.removeEventListener(ev, once); }); };
-    ['pointerdown', 'keydown', 'touchstart', 'wheel'].forEach(function (ev) { window.addEventListener(ev, once, { passive: true }); });
+    function setBtn() { if (btn) btn.textContent = fv.muted ? '🔇  Click for sound' : '🔊  Sound on'; }
+    fv.muted = true; setBtn();
     if (btn) btn.addEventListener('click', function (e) { e.stopPropagation(); fv.muted = !fv.muted; if (!fv.muted) fv.play(); setBtn(); });
   }
 
