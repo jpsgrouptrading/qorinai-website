@@ -8,7 +8,17 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Karla:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <link rel="stylesheet" href="assets/style.css">
-<style>.cp-video{border-radius:var(--r);overflow:hidden;background:#000;border:1px solid rgba(255,255,255,.12);box-shadow:0 40px 110px rgba(0,0,0,.55);aspect-ratio:16/9}.cp-video video{width:100%;height:100%;display:block;object-fit:cover}</style>
+<style>
+.cp-video{border-radius:var(--r);overflow:hidden;background:#000;border:1px solid var(--line);box-shadow:0 30px 80px rgba(13,13,13,.18);aspect-ratio:16/9}
+.cp-video video{width:100%;height:100%;display:block;object-fit:cover}
+.cp-video-xl{margin-top:36px}
+.cp-cap{font-family:var(--mono);font-size:11.5px;color:var(--muted);margin-top:12px;letter-spacing:.06em}
+.cp-below{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(28px,5vw,72px);align-items:start;margin-top:40px}
+.cp-below .metrics{grid-template-columns:1fr 1fr;gap:12px}
+.cp-below .metric{border:1px solid var(--line)}
+.cp-below .metric b{font-size:clamp(24px,2.3vw,32px);white-space:nowrap}
+@media (max-width:900px){.cp-below{grid-template-columns:1fr}}
+</style>
 </head>
 <body>
 <header class="nav" id="nav">
@@ -60,24 +70,22 @@
 
 <!-- ===== CHAIN ===== -->
 <!-- ===== FLAGSHIP PROJECT VIDEO ===== -->
-<section class="dark" id="flagship">
+<section id="flagship">
   <div class="wrap">
-    <div class="share" style="margin-top:0;align-items:start">
+    <p class="eyebrow">Flagship project · Victoria</p>
+    <h2 class="h2">A gigawatt AI campus designed around its power.</h2>
+    <div class="cp-video cp-video-xl"><video controls muted autoplay loop playsinline preload="metadata" poster="assets/video/campus-poster.jpg"><source src="assets/video/campus.mp4" type="video/mp4"></video></div>
+    <p class="cp-cap">CAMPUS FLY-THROUGH · MASTERPLAN VISUALISATION · INDICATIVE</p>
+    <div class="cp-below">
       <div>
-        <p class="eyebrow">Flagship project · Victoria</p>
-        <h2 class="h2">A gigawatt AI campus designed around its power.</h2>
-        <p class="lede" style="margin-top:18px">A greenfield freehold beside a 500 kV corridor in Melbourne's northern growth corridor, with a formal 1,000 MW transmission response already in hand. Four repeatable 250 MW modules, a new 500 kV terminal station, gas firming and 500 MWh of battery storage — the power process was run first.</p>
-        <div class="hero-facts" style="margin-top:22px">
-          <div class="fact"><b>1,000 MW</b><span>connection assessed feasible</span></div>
-          <div class="fact"><b>4 × 250 MW</b><span>repeatable modules</span></div>
-          <div class="fact"><b>500 MWh</b><span>grid-forming BESS</span></div>
-          <div class="fact"><b>36 months</b><span>to first energisation</span></div>
-        </div>
-        <div class="ctas"><a class="btn btn-white" href="campus.html">Explore the project</a><a class="btn btn-ghost" href="contact.html">Request the teaser</a></div>
+        <p class="lede">A greenfield freehold beside a 500 kV corridor in Melbourne's northern growth corridor, with a formal 1,000 MW transmission response already in hand. Four repeatable 250 MW modules, a new 500 kV terminal station, gas firming and 500 MWh of battery storage — the power process was run first, so the campus can be.</p>
+        <div class="ctas"><a class="btn btn-primary" href="campus.html">Explore the project</a><a class="btn btn-ghost" href="contact.html">Request the teaser</a></div>
       </div>
-      <div>
-        <div class="cp-video" style="margin-top:0"><video controls muted autoplay loop playsinline preload="metadata" poster="assets/video/campus-poster.jpg"><source src="assets/video/campus.mp4" type="video/mp4"></video></div>
-        <p style="font-family:var(--mono);font-size:11.5px;color:#9AA1A8;margin-top:12px;letter-spacing:.06em">CAMPUS FLY-THROUGH · MASTERPLAN VISUALISATION · INDICATIVE</p>
+      <div class="metrics" style="margin-top:0">
+        <div class="metric"><small>Connection</small><b>1,000 MW</b><span>assessed feasible</span></div>
+        <div class="metric"><small>Modules</small><b>4 × 250 MW</b><span>repeatable to 1 GW</span></div>
+        <div class="metric"><small>Storage</small><b>500 MWh</b><span>grid-forming BESS</span></div>
+        <div class="metric"><small>Programme</small><b>36 months</b><span>to first energisation</span></div>
       </div>
     </div>
   </div>
@@ -248,7 +256,7 @@
   <g fill="#F3F5F6"><rect x="14" y="50" width="4" height="8" rx="1"/><rect x="21.5" y="50" width="4" height="8" rx="1"/><rect x="29" y="50" width="4" height="8" rx="1"/><rect x="36.5" y="50" width="4" height="8" rx="1"/><rect x="44" y="50" width="4" height="8" rx="1"/></g>
   <text x="32" y="32.5" text-anchor="middle" font-family="Instrument Sans,Montserrat,ui-sans-serif,sans-serif" font-weight="700" font-size="14" fill="#F3F5F6" letter-spacing="0.5">QOR</text>
 </svg><span class="wordmark">QOR<span class="in">IN</span><span class="ai">AI</span></span></a>
-        <p>QOR is the core — the chip, the hall, the physical heart. IN is the intelligence layer that connects it. AI is what runs on top. QORINAI builds and operates all three.</p>
+        <ul class="meaning"><li><b>QOR</b><span>the core — the chip, the hall, the physical heart</span></li><li><b class="in">IN</b><span>the intelligence layer that connects it</span></li><li><b class="ai">AI</b><span>what runs on top</span></li></ul><p>QORINAI builds and operates all three.</p>
       </div>
       <div><h4>AIDC chain</h4><ul><li><a href="aidc.html#power">Land &amp; power</a></li><li><a href="aidc.html#design">Design &amp; build</a></li><li><a href="aidc.html#deploy">Cluster deployment</a></li><li><a href="aidc.html#operate">GPU operations</a></li><li><a href="aidc.html#cloud">Sovereign cloud</a></li></ul></div>
       <div><h4>Services</h4><ul><li><a href="services.html#build">Infrastructure development</a></li><li><a href="services.html#dc">Data centre services</a></li><li><a href="services.html#compute">Compute &amp; cloud</a></li><li><a href="services.html#managed">Managed &amp; professional</a></li><li><a href="services.html#industries">Industries</a></li><li><a href="intrallm.html">Software · IntraLLM</a></li></ul></div>

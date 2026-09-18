@@ -392,6 +392,11 @@ footer a{color:#C9CDD2}
 footer a:hover{color:#fff}
 .foot{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr 1fr;gap:32px}
 .foot p{font-size:14px;color:#7C848B;margin-top:16px;max-width:36ch;line-height:1.6}
+.foot .meaning{list-style:none;margin:18px 0 0;padding:0;display:grid;gap:7px;max-width:40ch}
+.foot .meaning li{display:grid;grid-template-columns:44px 1fr;gap:10px;align-items:baseline;font-size:13.5px;color:#9AA1A8;line-height:1.5}
+.foot .meaning b{font-family:var(--display);font-weight:700;letter-spacing:.16em;font-size:12.5px;color:#fff}
+.foot .meaning b.in{color:#7C848B}.foot .meaning b.ai{color:var(--cyan)}
+.foot .meaning+p{margin-top:12px}
 .foot h4{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#7C848B;font-weight:500}
 .foot ul{display:flex;flex-direction:column;gap:10px;margin-top:16px;font-size:14.5px}
 .legal{display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-between;margin-top:56px;padding-top:22px;border-top:1px solid var(--line-dark);font-family:var(--mono);font-size:11.5px;color:#5F666D}
