@@ -114,7 +114,7 @@
   var sel = '.card, .step, .proj, .tier, .metric, .hw, .tl li, .why3 > div, .cmp, .partner, .faq details, .table-scroll, .photo-strip, .share > div, .h2, .lede, .eyebrow, .statement, .feat li, .loc, .link-card, .row-head, .hw-note, .cat > *';
   var items = document.querySelectorAll(sel);
   items.forEach(function (el) {
-    if (el.closest('.hero') || el.closest('.page-hero')) return;
+    if (el.closest('.hero') || el.closest('.page-hero') || el.closest('[data-no-reveal]')) return;
     el.classList.add('rv');
     var sib = el.parentElement ? Array.prototype.indexOf.call(el.parentElement.children, el) : 0;
     el.style.setProperty('--d', Math.min(sib, 8) * 0.08 + 's');
@@ -144,8 +144,9 @@
 
   /* ---------- count-up ---------- */
   document.querySelectorAll('.fact b, .metric b, .proj .big b, .tier b').forEach(function (el) { io.observe(el); });
+  var countSel = '.fact b, .metric b, .proj .big b, .tier b';
   function countUp(el) {
-    if (el.dataset.counted) return;
+    if (el.dataset.counted || !el.matches(countSel)) return;
     var m = /^([^\d]*)(\d[\d,]*\.?\d*)(.*)$/s.exec(el.textContent.trim());
     if (!m) return;
     var target = parseFloat(m[2].replace(/,/g, '')), dec = (m[2].split('.')[1] || '').length;

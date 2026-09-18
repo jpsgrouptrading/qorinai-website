@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>IntraLLM · Enterprise AI Platform · QORINAI</title>
+<meta name="description" content="IntraLLM is QORINAI's turn-key enterprise-AI platform: inference and train your own LLM and multimodal models on-premises or in a private cloud — hardware, GPU orchestration, model repository, assistants, automation and assurance in one stack.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Karla:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+.il-shot{border-radius:var(--r);overflow:hidden;border:1px solid var(--line-dark-2);background:var(--ink-2);box-shadow:0 30px 80px rgba(0,0,0,.45)}
+.il-shot img{width:100%;display:block}
+.il-stack{display:grid;gap:10px;margin-top:8px}
+.il-stack li{display:grid;grid-template-columns:64px 1fr;gap:18px;align-items:start;padding:18px 20px;border:1px solid var(--line);border-radius:var(--r-sm);background:#fff}
+section.alt .il-stack li{border-color:transparent}
+.il-stack .n{font-family:var(--mono);font-size:12px;color:var(--cyan-deep);letter-spacing:.08em;padding-top:4px}
+.il-stack b{display:block;font-family:var(--display);font-size:17px;font-weight:500;color:var(--text)}
+.il-stack p{font-size:14.5px;color:var(--muted);margin-top:4px}
+.il-bench{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:28px}
+.il-bench div{padding:22px 22px;border-radius:var(--r-sm);border:1px solid rgba(255,255,255,.10);background:rgba(255,255,255,.04)}
+.il-bench div.win{border-color:rgba(36,180,232,.45);background:rgba(36,180,232,.08)}
+.il-bench small{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#9AA1A8;display:block}
+.il-bench b{display:block;font-family:var(--display);font-size:clamp(26px,3vw,38px);font-weight:500;color:#fff;margin-top:8px;letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+.il-bench span{display:block;font-size:13.5px;color:#9AA1A8;margin-top:4px}
+@media (max-width:700px){.il-bench{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header class="nav" id="nav">
+  <div class="wrap"><div class="nav-bar">
+    <a class="brand" href="index.html" aria-label="QORINAI home"><svg viewBox="0 0 64 64" aria-hidden="true">
+  <rect x="6" y="4" width="52" height="46" rx="8" fill="#141719" stroke="#3A4045" stroke-width="2"/>
+  <rect x="12" y="10" width="40" height="34" rx="5" fill="#1C2023" stroke="#2A3035" stroke-width="1.5"/>
+  <rect x="2" y="20" width="4" height="14" rx="1" fill="#3A4045"/><rect x="58" y="20" width="4" height="14" rx="1" fill="#3A4045"/>
+  <g fill="#F3F5F6"><rect x="14" y="50" width="4" height="8" rx="1"/><rect x="21.5" y="50" width="4" height="8" rx="1"/><rect x="29" y="50" width="4" height="8" rx="1"/><rect x="36.5" y="50" width="4" height="8" rx="1"/><rect x="44" y="50" width="4" height="8" rx="1"/></g>
+  <text x="32" y="32.5" text-anchor="middle" font-family="Instrument Sans,Montserrat,ui-sans-serif,sans-serif" font-weight="700" font-size="14" fill="#F3F5F6" letter-spacing="0.5">QOR</text>
+</svg><span class="wordmark">QOR<span class="in">IN</span><span class="ai">AI</span></span></a>
+    <nav class="nav-links" aria-label="Primary"><a href="aidc.html">AIDC Chain</a><a href="services.html">Services</a><a href="hardware.html">Hardware</a><a href="intrallm.html" class="active">IntraLLM</a><a href="projects.html">Track Record</a><a href="hyperscalers.html">Strategic Shareholder</a><a href="about.html">About</a></nav>
+    <div class="nav-cta">
+      <a class="btn btn-white" href="contact.html">Contact us</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+    </div>
+  </div></div>
+</header>
+<main>
+<section class="page-hero"><img class="art" src="assets/photo/art-contours-wide.jpg" alt="" fetchpriority="high">
+  <div class="wrap">
+    <div class="crumbs"><a href="index.html">Home</a><span>/</span><span>IntraLLM</span></div>
+    <p class="eyebrow">Software · IntraLLM</p>
+    <h1>Your own AI, inside your own network.</h1>
+    <p class="lede">IntraLLM is QORINAI's turn-key enterprise-AI platform — everything an IT department needs to inference and train its own large language and multimodal models on-premises or in a dedicated private cloud. From the GPU hardware and cluster orchestration up to pre-trained models, assistants and business automation: one stack, one vendor, and your data never leaves the building.</p>
+    <div class="badges"><span class="badge">On-premises or private cloud</span><span class="badge">Air-gapped capable</span><span class="badge">Bring your own model</span><span class="badge">Multi-GPU cluster manager</span><span class="badge">NVIDIA &amp; AMD GPUs</span><span class="badge">Developed with Hyperscalers</span></div>
+    <div class="ctas"><a class="btn btn-cyan" href="contact.html">Request a demo</a><a class="btn btn-ghost" href="#modules">See the modules</a></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="eyebrow">Why it exists</p>
+    <p class="statement">Every enterprise will need to train and mature its own AI models. The question is whether that knowledge stays inside the company — <span class="ai">or leaks out through a public API.</span></p>
+    <ul class="feat">
+      <li><span class="k">01 · IP RETENTION</span><b>Knowledge that stays when people leave</b><p>When staff move on they take know-how with them. Models trained inside the network turn that experience into a permanent, queryable company asset.</p></li>
+      <li><span class="k">02 · VALUE CREATION</span><b>Every automated workflow adds enterprise value</b><p>Owning the models means IT can streamline, automate and quality-assure process after process — the business does more with less, and the capability compounds.</p></li>
+      <li><span class="k">03 · SOVEREIGNTY</span><b>Compliance by architecture, not by contract</b><p>No enterprise data or prompts are sent to external proprietary LLMs, so privacy, data-protection and sovereignty obligations are met without relying on a vendor's promise.</p></li>
+      <li><span class="k">04 · SECURITY</span><b>An AI model that defends the network it lives in</b><p>Run cyber-assurance workloads from the safety of your own perimeter — the model inspects your logs, configurations and tickets without any of it going offsite.</p></li>
+      <li><span class="k">05 · ECONOMICS</span><b>Predictable cost at enterprise scale</b><p>Per-token API bills grow with every user and every agent. Dedicated GPUs in your own hall or a QORINAI tenancy give a flat, forecastable cost per month.</p></li>
+      <li><span class="k">06 · LATENCY &amp; BANDWIDTH</span><b>Keep the data next to the GPUs</b><p>Moving very large datasets across the internet is slow, costly and starves GPUs of work. Inference and training beside the data keeps utilisation — and energy efficiency — high.</p></li>
+    </ul>
+  </div>
+</section>
+
+<section class="alt" id="modules">
+  <div class="wrap">
+    <p class="eyebrow">Platform modules</p>
+    <h2 class="h2">Seven enterprise-AI functions in one console.</h2>
+    <p class="lede">IntraLLM is organised the way an IT department buys and operates: business-facing modules on top, model management in the middle, cluster operations underneath.</p>
+    <div class="grid grid-4">
+      <div class="card bar"><h3>Business Assistant</h3><p>An internal assistant grounded in company documents, systems and policies — and a customer-facing assistant on the same governed stack.</p><span class="tag">INTERNAL · CUSTOMER</span></div>
+      <div class="card bar"><h3>Process Automation</h3><p>Connect the model to ERP, CRM, ticketing and any information system; agents read screens, fill forms and complete workflows end-to-end.</p><span class="tag">ERP → ANY SYSTEM</span></div>
+      <div class="card bar"><h3>Business Assurance</h3><p>Quality-assure construction documentation, cyber posture and marketing output with models that check against your own standards.</p><span class="tag">CONSTRUCTION · CYBER · MARKETING</span></div>
+      <div class="card bar"><h3>Bring Your Own Model</h3><p>A custom section to load, fine-tune and serve your proprietary or fine-tuned models alongside the curated repository.</p><span class="tag">BYOM · FINE-TUNE</span></div>
+      <div class="card bar"><h3>Model Repository</h3><p>Pre-trained LLM and multimodal (LMM) models ready to serve — including GLM-4.6V, Qwen 2.5 and DeepSeek-class reasoning models.</p><span class="tag">LLM · LMM · OPEN-WEIGHT</span></div>
+      <div class="card bar"><h3>Cluster Manager</h3><p>Clustering, GPU job orchestration and live monitoring — utilisation, memory, power and temperature per GPU across every node.</p><span class="tag">ORCHESTRATION · MONITORING</span></div>
+      <div class="card bar"><h3>Support</h3><p>Australian engineering support for the platform, the models and the hardware underneath it — one number for the whole stack.</p><span class="tag">AU ENGINEERS</span></div>
+      <div class="card bar"><h3>SQL Agent</h3><p>Ask the database a question in plain English; the agent writes, runs and explains the SQL — SQLite, MySQL, PostgreSQL, Oracle and SQL Server.</p><span class="tag">NATURAL LANGUAGE → SQL</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="dark">
+  <div class="wrap split">
+    <div class="sticky">
+      <p class="eyebrow">The stack</p>
+      <h2 class="h2">Bottom-up, from the GPU to the user.</h2>
+      <p class="lede">Most "enterprise AI" products are a chat window that calls someone else's API. IntraLLM is the whole stack, so the hardware, the scheduler, the models and the interface are engineered and supported together.</p>
+      <div class="il-shot" style="margin-top:28px"><img src="assets/img/intrallm-dashboard.png" alt="IntraLLM cluster manager dashboard showing GPU utilisation, memory, power and temperature across nodes" loading="lazy"></div>
+      <p style="font-family:var(--mono);font-size:11.5px;color:#9AA1A8;margin-top:10px;letter-spacing:.06em">CLUSTER MANAGER · MIXED H100 NVL / L40S / RTX FLEET · LIVE</p>
+    </div>
+    <ol class="il-stack">
+      <li><span class="n">L1</span><div><b>Hardware</b><p>GPU servers from Australian stock — NVIDIA HGX B300 / H200 / H100 NVL, AMD Instinct, RTX PRO — configured and burned in by Hyperscalers, deployed by QORINAI.</p></div></li>
+      <li><span class="n">L2</span><div><b>Clustering &amp; GPU job orchestration</b><p>Multi-node scheduling of inference and training jobs, with per-GPU telemetry, alerting and capacity planning in the console.</p></div></li>
+      <li><span class="n">L3</span><div><b>Transformers &amp; custom extensions</b><p>The serving and fine-tuning runtime, quantisation (INT8 / FP8), retrieval pipelines and connectors into enterprise systems.</p></div></li>
+      <li><span class="n">L4</span><div><b>Model repository</b><p>Curated pre-trained LLM and LMM models, plus your own — versioned, access-controlled and served from inside the network.</p></div></li>
+      <li><span class="n">L5</span><div><b>Interfaces for admins and user groups</b><p>Web console for IT; assistants, agents and the SQL Agent for business users; APIs for developers — all behind your identity provider.</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="eyebrow">Proof points</p>
+    <h2 class="h2">What the platform does in practice.</h2>
+    <div class="grid grid-3">
+      <div class="card"><h3>Multimodal on-premises — GLM-4.6V</h3><p>Native image, document and video understanding with a 128K context window: roughly 150 pages of technical documents or an hour of video in a single pass. Reads SAP, CRM and ticketing screens directly, interprets construction drawings and network diagrams, and generates code from UI screenshots.</p><span class="tag">DESKTOP CAPTURE · DRAWINGS · VISUAL AUDIT</span></div>
+      <div class="card"><h3>Natural language to SQL — SQL Agent</h3><p>"Which products have never been purchased?" becomes an optimised query, executed locally and explained in plain language. Users can view, copy and refine the generated SQL; every byte stays inside the organisation — built for finance, healthcare and government.</p><span class="tag">AIR-GAPPED · 5 SQL DIALECTS</span></div>
+      <div class="card"><h3>Agents that drive real systems</h3><p>Browser and desktop automation driven by natural-language instructions — configuring products on a vendor website, completing enquiry forms, extracting data from legacy applications — running on local models with no data leaving the network.</p><span class="tag">BROWSER-USE · RPA WITHOUT SCRIPTS</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="navy">
+  <div class="wrap">
+    <p class="eyebrow">Benchmark</p>
+    <h2 class="h2">A local model on one H200 beat the public cloud.</h2>
+    <p class="lede">A structured browser-automation task — configure a vehicle on a manufacturer's website and complete the enquiry form from natural-language instructions — run on three set-ups. The quantised open-weight model on a single H200 finished first.</p>
+    <div class="il-bench">
+      <div class="win"><small>Qwen 2.5 72B · single NVIDIA H200</small><b>2 min 25 s</b><span>INT8-quantised, 141 GB HBM3e — whole model on one GPU, no cross-device sync</span></div>
+      <div><small>GPT-4o · public API</small><b>2 min 40 s</b><span>Cloud model, data leaves the network on every call</span></div>
+      <div><small>Qwen 2.5 72B · multi-GPU A6000</small><b>6 min 22 s</b><span>Model split across cards — NCCL and PCIe overhead dominate</span></div>
+    </div>
+    <p style="font-size:13px;color:#9AA1A8;margin-top:18px;max-width:80ch">Hyperscalers internal benchmark, single run, indicative only. Results vary by task, quantisation and model version. The point stands: with the right GPU and memory bandwidth, on-premises inference is not a compromise.</p>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <p class="eyebrow">Why software matters to a data-centre company</p>
+    <h2 class="h2">The hall is the asset. The platform is the reason to fill it.</h2>
+    <div class="why3">
+      <div><h3>Demand for the halls we build</h3><p>Every IntraLLM deployment is a GPU node that needs power, cooling and operations. Software turns a colocation conversation into a workload conversation — and workloads are what fill racks.</p></div>
+      <div><h3>Recurring revenue on top of capacity</h3><p>Space and power are priced per kilowatt and compete on rate. A platform is priced per seat, per model and per outcome, adds an annuity to the hosting contract, and makes a customer far harder to move.</p></div>
+      <div><h3>One accountable operator, end to end</h3><p>QOR is the core, IN is the intelligence layer, AI is what runs on top. IntraLLM is the "IN" — the same team that designed the cooling loop also operates the model serving it, so there is one SLA from the substation to the answer.</p></div>
+    </div>
+    <div class="compare">
+      <div class="cmp"><small>Public AI API</small><h3>Rent someone else's model</h3><ul><li>Prompts and documents leave the country</li><li>Per-token cost grows with every user and agent</li><li>Provider can change, throttle or retire the model</li><li>Your interactions may train their next model</li><li>No control over where inference physically runs</li></ul></div>
+      <div class="cmp win"><small>IntraLLM on QORINAI infrastructure</small><h3>Own the model, the GPUs and the data path</h3><ul><li>Runs in your hall, a QORINAI private tenancy or the sovereign cloud</li><li>Flat monthly cost on dedicated GPUs, billed in AUD</li><li>Open-weight and proprietary models under your version control</li><li>No training on your data — ever</li><li>Australian hardware, warranty, engineers and SLA</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="eyebrow">How it is delivered</p>
+    <h2 class="h2">Three ways to run IntraLLM.</h2>
+    <div class="grid grid-3">
+      <div class="card bar"><h3>Appliance in your data centre</h3><p>Pre-configured GPU nodes from Hyperscalers' Australian stock, IntraLLM installed and burned in, delivered to your rack. Air-gapped if required.</p><ul class="ticks"><li>Single node to multi-rack cluster</li><li>Metro delivery in 1–4 days</li><li>Full Australian warranty</li></ul></div>
+      <div class="card bar"><h3>Private tenancy in a QORINAI hall</h3><p>Your dedicated GPUs, in a private cage or suite, operated 24×7 by QORINAI — the platform, the fleet and the facility under one contract.</p><ul class="ticks"><li>30–150 kW liquid-cooled racks</li><li>99.9 % node SLA, hot spares</li><li>Dedicated network, your identity provider</li></ul></div>
+      <div class="card bar"><h3>Sovereign cloud</h3><p>IntraLLM as a managed service on QORINAI's Australian GPU cloud — reserved capacity, AUD billing, no prompt caching and no training on your data.</p><ul class="ticks"><li>Start with one GPU, scale to nodes</li><li>Virtual private cloud isolation</li><li>Move to on-premises later without re-platforming</li></ul></div>
+    </div>
+    <div class="faq">
+      <details><summary>Which models are included?</summary><p>The repository ships with curated open-weight large language and multimodal models — GLM-4.6V, Qwen 2.5 and DeepSeek-class reasoning models among them — and is updated as new releases are validated on the supported hardware. Your own fine-tuned or proprietary models sit alongside them in the BYOM section.</p></details>
+      <details><summary>What hardware does it run on?</summary><p>NVIDIA HGX B300 / B200, H200, H100 NVL, L40S and RTX PRO systems, and AMD Instinct MI325X, all from the Hyperscalers catalogue. A single H200 comfortably serves a quantised 72B model; larger fleets are scheduled by the cluster manager.</p></details>
+      <details><summary>Does anything leave our network?</summary><p>No. Inference, fine-tuning, retrieval and the SQL Agent all run on your GPUs. Fully air-gapped installations are supported; updates are delivered as signed packages.</p></details>
+      <details><summary>How is it priced?</summary><p>Platform licence per deployment plus the hardware or hosting underneath it. Ask for a configuration — we quote the appliance, the tenancy and the cloud option side by side.</p></details>
+    </div>
+  </div>
+</section>
+
+<div class="cta-band">
+  <div class="wrap">
+    <div><h2>See IntraLLM on real GPUs.</h2><p>Test-drive the platform in HyperLabs or on a QORINAI tenancy with your own documents and databases.</p></div>
+    <a class="btn btn-cyan" href="contact.html">Request a demo</a>
+  </div>
+</div>
+
+</main>
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <a class="brand" href="index.html"><svg viewBox="0 0 64 64" aria-hidden="true">
+  <rect x="6" y="4" width="52" height="46" rx="8" fill="#141719" stroke="#3A4045" stroke-width="2"/>
+  <rect x="12" y="10" width="40" height="34" rx="5" fill="#1C2023" stroke="#2A3035" stroke-width="1.5"/>
+  <rect x="2" y="20" width="4" height="14" rx="1" fill="#3A4045"/><rect x="58" y="20" width="4" height="14" rx="1" fill="#3A4045"/>
+  <g fill="#F3F5F6"><rect x="14" y="50" width="4" height="8" rx="1"/><rect x="21.5" y="50" width="4" height="8" rx="1"/><rect x="29" y="50" width="4" height="8" rx="1"/><rect x="36.5" y="50" width="4" height="8" rx="1"/><rect x="44" y="50" width="4" height="8" rx="1"/></g>
+  <text x="32" y="32.5" text-anchor="middle" font-family="Instrument Sans,Montserrat,ui-sans-serif,sans-serif" font-weight="700" font-size="14" fill="#F3F5F6" letter-spacing="0.5">QOR</text>
+</svg><span class="wordmark">QOR<span class="in">IN</span><span class="ai">AI</span></span></a>
+        <p>QOR is the core — the chip, the hall, the physical heart. IN is the intelligence layer that connects it. AI is what runs on top. QORINAI builds and operates all three.</p>
+      </div>
+      <div><h4>AIDC chain</h4><ul><li><a href="aidc.html#power">Land &amp; power</a></li><li><a href="aidc.html#design">Design &amp; build</a></li><li><a href="aidc.html#deploy">Cluster deployment</a></li><li><a href="aidc.html#operate">GPU operations</a></li><li><a href="aidc.html#cloud">Sovereign cloud</a></li></ul></div>
+      <div><h4>Services</h4><ul><li><a href="services.html#build">Infrastructure development</a></li><li><a href="services.html#dc">Data centre services</a></li><li><a href="services.html#compute">Compute &amp; cloud</a></li><li><a href="services.html#managed">Managed &amp; professional</a></li><li><a href="services.html#industries">Industries</a></li><li><a href="intrallm.html">IntraLLM platform</a></li></ul></div>
+      <div><h4>Hardware</h4><ul><li><a href="hardware.html#gpu">GPU servers</a></li><li><a href="hardware.html#rack">Rack-scale systems</a></li><li><a href="hardware.html#network">Networking</a></li><li><a href="hardware.html#storage">Storage</a></li><li><a href="hardware.html#catalogue">Full catalogue</a></li></ul></div>
+      <div><h4>Company</h4><ul><li><a href="about.html">About QORINAI</a></li><li><a href="projects.html">Track record</a></li><li><a href="hyperscalers.html">Strategic shareholder</a></li><li><a href="about.html#faq">FAQ</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+    </div>
+    <div class="legal">
+      <span>© 2026 QORINAI Pty Ltd · A/200 Bourke Rd, Alexandria NSW 2015, Australia</span>
+      <span>Privacy · Terms · Specifications indicative and subject to final design · Photography: Unsplash (placeholder)</span>
+    </div>
+  </div>
+</footer>
+<script src="assets/site.js"></script>
+</body>
+</html>

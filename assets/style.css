@@ -47,8 +47,8 @@ section.navy .eyebrow,section.dark .eyebrow{color:var(--cyan)}
 .btn-ghost:hover{border-color:var(--text)}
 .btn-white{background:#fff;color:var(--ink)}
 .btn-white:hover{box-shadow:0 12px 30px rgba(0,0,0,.25)}
-section.dark .btn-ghost,section.navy .btn-ghost,.hero .btn-ghost{border-color:rgba(255,255,255,.28);color:#fff}
-section.dark .btn-ghost:hover,section.navy .btn-ghost:hover,.hero .btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,.06)}
+section.dark .btn-ghost,section.navy .btn-ghost,.hero .btn-ghost,.page-hero .btn-ghost{border-color:rgba(255,255,255,.28);color:#fff}
+section.dark .btn-ghost:hover,section.navy .btn-ghost:hover,.hero .btn-ghost:hover,.page-hero .btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,.06)}
 .btn svg{width:16px;height:16px}
 .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
 .arrow{font-family:var(--display);font-weight:500;font-size:15px;color:var(--cyan-deep);display:inline-flex;align-items:center;gap:8px}
