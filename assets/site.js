@@ -12,12 +12,33 @@
   }
   window.addEventListener('scroll', function () { nav && nav.classList.toggle('scrolled', window.scrollY > 24); }, { passive: true });
 
-  /* ---------- contact form (static demo — wire to a form backend before launch) ---------- */
+  /* ---------- contact form: every enquiry goes to finance@qorinai.ai via the visitor's mail app ---------- */
   var form = document.getElementById('contactForm');
   if (form) form.addEventListener('submit', function (e) {
     e.preventDefault(); if (!form.reportValidity()) return;
+    var v = function (n) { var el = form.elements[n]; return el ? el.value.trim() : ''; };
+    var subject = 'Enquiry via qorinai.ai — ' + (v('need') || 'General') + (v('company') ? ' — ' + v('company') : '');
+    var body = ['Name: ' + v('name'), 'Company: ' + v('company'), 'Work email: ' + v('email'), 'I need to: ' + v('need'), 'Scale: ' + v('scale'), '', v('message')].join('\n');
+    window.location.href = 'mailto:finance@qorinai.ai?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
     document.getElementById('sent').hidden = false; form.querySelector('button[type=submit]').disabled = true;
   });
+
+  /* ---------- homepage video: try to autoplay with sound; browsers usually require a gesture, so unmute on first interaction ---------- */
+  var fv = document.getElementById('flagshipVideo');
+  if (fv) {
+    var btn = document.getElementById('soundBtn');
+    function setBtn() { if (btn) btn.textContent = fv.muted ? '🔇  Sound off — click to unmute' : '🔊  Sound on'; }
+    function tryUnmute() {
+      fv.muted = false; var p = fv.play();
+      if (p && p.catch) p.catch(function () { fv.muted = true; fv.play(); setBtn(); });
+      setBtn();
+    }
+    setBtn();
+    tryUnmute();
+    var once = function () { if (fv.muted) tryUnmute(); ['pointerdown', 'keydown', 'touchstart', 'wheel'].forEach(function (ev) { window.removeEventListener(ev, once); }); };
+    ['pointerdown', 'keydown', 'touchstart', 'wheel'].forEach(function (ev) { window.addEventListener(ev, once, { passive: true }); });
+    if (btn) btn.addEventListener('click', function (e) { e.stopPropagation(); fv.muted = !fv.muted; if (!fv.muted) fv.play(); setBtn(); });
+  }
 
   /* ---------- hero headline: word-by-word rise ---------- */
   var title = document.getElementById('heroTitle');

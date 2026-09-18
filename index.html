@@ -11,7 +11,9 @@
 <style>
 .cp-video{border-radius:var(--r);overflow:hidden;background:#000;border:1px solid var(--line);box-shadow:0 30px 80px rgba(13,13,13,.18);aspect-ratio:16/9}
 .cp-video video{width:100%;height:100%;display:block;object-fit:cover}
-.cp-video-xl{margin-top:36px}
+.cp-video-xl{margin-top:36px;position:relative}
+.sound-btn{position:absolute;top:14px;right:14px;z-index:2;font-family:var(--mono);font-size:12px;letter-spacing:.04em;color:#fff;background:rgba(13,13,13,.62);border:1px solid rgba(255,255,255,.3);border-radius:999px;padding:8px 14px;cursor:pointer;backdrop-filter:blur(6px)}
+.sound-btn:hover{background:rgba(13,13,13,.85)}
 .cp-cap{font-family:var(--mono);font-size:11.5px;color:var(--muted);margin-top:12px;letter-spacing:.06em}
 .cp-below{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(28px,5vw,72px);align-items:start;margin-top:40px}
 .cp-below .metrics{grid-template-columns:1fr 1fr;gap:12px}
@@ -74,12 +76,12 @@
   <div class="wrap">
     <p class="eyebrow">Flagship project · Victoria</p>
     <h2 class="h2">A gigawatt AI campus designed around its power.</h2>
-    <div class="cp-video cp-video-xl"><video controls muted autoplay loop playsinline preload="metadata" poster="assets/video/campus-poster.jpg"><source src="assets/video/campus.mp4" type="video/mp4"></video></div>
+    <div class="cp-video cp-video-xl"><video id="flagshipVideo" controls autoplay muted loop playsinline preload="auto" poster="assets/video/campus-poster.jpg"><source src="assets/video/campus.mp4" type="video/mp4"></video><button class="sound-btn" id="soundBtn" type="button" aria-label="Toggle sound"></button></div>
     <p class="cp-cap">CAMPUS FLY-THROUGH · MASTERPLAN VISUALISATION · INDICATIVE</p>
     <div class="cp-below">
       <div>
         <p class="lede">A greenfield freehold beside a 500 kV corridor in Melbourne's northern growth corridor, with a formal 1,000 MW transmission response already in hand. Four repeatable 250 MW modules, a new 500 kV terminal station, gas firming and 500 MWh of battery storage — the power process was run first, so the campus can be.</p>
-        <div class="ctas"><a class="btn btn-primary" href="campus.html">Explore the project</a><a class="btn btn-ghost" href="contact.html">Request the teaser</a></div>
+        <div class="ctas"><a class="btn btn-primary" href="invest.html">For investors</a><a class="btn btn-ghost" href="campus.html">Technical overview</a><a class="btn btn-ghost" href="mailto:finance@qorinai.ai?subject=Teaser%20request%20%E2%80%94%20Project%20Ironbark">Request the teaser</a></div>
       </div>
       <div class="metrics" style="margin-top:0">
         <div class="metric"><small>Connection</small><b>1,000 MW</b><span>assessed feasible</span></div>
@@ -261,10 +263,10 @@
       <div><h4>AIDC chain</h4><ul><li><a href="aidc.html#power">Land &amp; power</a></li><li><a href="aidc.html#design">Design &amp; build</a></li><li><a href="aidc.html#deploy">Cluster deployment</a></li><li><a href="aidc.html#operate">GPU operations</a></li><li><a href="aidc.html#cloud">Sovereign cloud</a></li></ul></div>
       <div><h4>Services</h4><ul><li><a href="services.html#build">Infrastructure development</a></li><li><a href="services.html#dc">Data centre services</a></li><li><a href="services.html#compute">Compute &amp; cloud</a></li><li><a href="services.html#managed">Managed &amp; professional</a></li><li><a href="services.html#industries">Industries</a></li><li><a href="intrallm.html">Software · IntraLLM</a></li></ul></div>
       <div><h4>Hardware</h4><ul><li><a href="hardware.html#gpu">GPU servers</a></li><li><a href="hardware.html#rack">Rack-scale systems</a></li><li><a href="hardware.html#network">Networking</a></li><li><a href="hardware.html#storage">Storage</a></li><li><a href="hardware.html#catalogue">Full catalogue</a></li></ul></div>
-      <div><h4>Company</h4><ul><li><a href="about.html">About QORINAI</a></li><li><a href="projects.html">Track record</a></li><li><a href="campus.html">Flagship project</a></li><li><a href="hyperscalers.html">Strategic shareholder</a></li><li><a href="about.html#faq">FAQ</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div><h4>Company</h4><ul><li><a href="about.html">About QORINAI</a></li><li><a href="projects.html">Track record</a></li><li><a href="invest.html">Invest · Project Ironbark</a></li><li><a href="campus.html">Flagship project · technical</a></li><li><a href="hyperscalers.html">Strategic shareholder</a></li><li><a href="about.html#faq">FAQ</a></li><li><a href="contact.html">Contact</a></li><li><a href="mailto:finance@qorinai.ai">finance@qorinai.ai</a></li></ul></div>
     </div>
     <div class="legal">
-      <span>© 2026 QORINAI Pty Ltd · A/200 Bourke Rd, Alexandria NSW 2015, Australia</span>
+      <span>© 2026 QORINAI Pty Ltd · A/200 Bourke Rd, Alexandria NSW 2015, Australia · <a href="mailto:finance@qorinai.ai" style="color:inherit">finance@qorinai.ai</a></span>
       <span>Privacy · Terms · Specifications indicative and subject to final design · Photography: Unsplash (placeholder)</span>
     </div>
   </div>
