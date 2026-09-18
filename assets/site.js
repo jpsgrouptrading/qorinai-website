@@ -29,6 +29,15 @@
     var btn = document.getElementById('soundBtn');
     function setBtn() { if (btn) btn.textContent = fv.muted ? '🔇  Click for sound' : '🔊  Sound on'; }
     fv.muted = true; setBtn();
+    // load the 20 MB file only when the player scrolls near the viewport, then autoplay muted
+    var loadVideo = function () { if (fv.dataset.src) { fv.autoplay = true; fv.src = fv.dataset.src; delete fv.dataset.src; fv.addEventListener('canplay', function () { var pp = fv.play(); if (pp && pp.catch) pp.catch(function () {}); }, { once: true }); fv.load(); } };
+    var nearView = function () { var r = fv.getBoundingClientRect(); return r.top < innerHeight + 400 && r.bottom > -400; };
+    var check = function () { if (fv.dataset.src && nearView()) { loadVideo(); window.removeEventListener('scroll', check); } };
+    if ('IntersectionObserver' in window) {
+      new IntersectionObserver(function (en, o) { en.forEach(function (e) { if (e.isIntersecting) { loadVideo(); o.disconnect(); } }); }, { rootMargin: '400px 0px' }).observe(fv);
+    }
+    window.addEventListener('scroll', check, { passive: true });
+    setTimeout(check, 1500);
     if (btn) btn.addEventListener('click', function (e) { e.stopPropagation(); fv.muted = !fv.muted; if (!fv.muted) fv.play(); setBtn(); });
   }
 
