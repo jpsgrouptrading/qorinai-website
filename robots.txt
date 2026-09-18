@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://qorinai.ai/sitemap.xml
