@@ -55,10 +55,10 @@ section.alt .il-stack li{border-color:transparent}
 .il-console .cap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#9AA1A8;margin-top:12px}
 .il-console .cap b{color:var(--cyan);font-weight:500}
 .il-ip{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:40px}
-.il-ip div{padding:20px 22px;border:1px solid rgba(255,255,255,.12);border-radius:var(--r-sm);background:rgba(255,255,255,.04);backdrop-filter:blur(8px)}
-.il-ip small{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--cyan);display:block}
-.il-ip b{display:block;font-family:var(--display);font-size:18px;font-weight:500;color:#fff;margin-top:8px}
-.il-ip span{display:block;font-size:13.5px;color:#9AA1A8;margin-top:4px}
+.il-ip div{padding:20px 22px;border:1px solid var(--line);border-radius:var(--r-sm);background:#fff}
+.il-ip small{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--cyan-deep);display:block}
+.il-ip b{display:block;font-family:var(--display);font-size:18px;font-weight:500;color:var(--text);margin-top:8px}
+.il-ip span{display:block;font-size:13.5px;color:var(--muted);margin-top:4px}
 @media (max-width:900px){.il-hero{grid-template-columns:1fr}.il-ip{grid-template-columns:1fr}}
 </style>
 </head>
@@ -86,10 +86,9 @@ section.alt .il-stack li{border-color:transparent}
     <p class="eyebrow">Software · QORINAI proprietary platform</p>
     <div class="il-hero">
       <div>
-        <div class="il-logo lg" aria-label="IntraLLM"><svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="24" fill="none" stroke="#24B4E8" stroke-width="5"/><circle cx="32" cy="32" r="24" fill="none" stroke="rgba(36,180,232,.28)" stroke-width="12" stroke-dasharray="38 113" stroke-linecap="round" transform="rotate(-90 32 32)"/><circle cx="32" cy="32" r="8" fill="#F3F5F6"/></svg><span><span class="a">Intra</span><span class="b">LLM</span></span><span class="c">.AI</span></div>
+        <div class="il-logo" aria-label="IntraLLM" style="font-size:34px"><svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="24" fill="none" stroke="#24B4E8" stroke-width="5"/><circle cx="32" cy="32" r="24" fill="none" stroke="rgba(36,180,232,.28)" stroke-width="12" stroke-dasharray="38 113" stroke-linecap="round" transform="rotate(-90 32 32)"/><circle cx="32" cy="32" r="8" fill="#F3F5F6"/></svg><span><span class="a">Intra</span><span class="b">LLM</span></span><span class="c">.AI</span></div>
         <h1>Your own AI, inside your own network.</h1>
-        <p class="lede">IntraLLM is QORINAI's turn-key enterprise-AI platform — everything an IT department needs to inference and train its own large language and multimodal models on-premises or in a dedicated private cloud. Hardware, GPU orchestration, model repository, assistants, automation and assurance: one console, one vendor, and your data never leaves the building.</p>
-        <div class="badges"><span class="badge">On-premises or private cloud</span><span class="badge">Air-gapped capable</span><span class="badge">Bring your own model</span><span class="badge">NVIDIA &amp; AMD GPUs</span></div>
+        <p class="lede">IntraLLM is QORINAI's turn-key enterprise-AI platform: inference and train your own large language and multimodal models on-premises or in a private cloud — hardware, GPU orchestration, model repository, assistants and automation in one console. Your data never leaves the building.</p>
         <div class="ctas"><a class="btn btn-cyan" href="contact.html">Request a demo</a><a class="btn btn-ghost" href="#modules">See the modules</a></div>
       </div>
       <div class="il-console">
@@ -97,7 +96,12 @@ section.alt .il-stack li{border-color:transparent}
         <div class="cap"><span><b>IntraLLM console</b> · Cluster Manager</span><span>Business Assistant · Process Automation · Business Assurance · Custom · Model Repository · Support</span></div>
       </div>
     </div>
-    <div class="il-ip">
+  </div>
+</section>
+
+<section class="alt" style="padding-block:40px">
+  <div class="wrap">
+    <div class="il-ip" style="margin-top:0">
       <div><small>Intellectual property</small><b>QORINAI-owned platform</b><span>Developed with our strategic shareholder Hyperscalers; licensed per deployment, supported by Australian engineers.</span></div>
       <div><small>Delivery interface</small><b>One console for admins and users</b><span>Web console for IT, assistants and agents for business users, APIs for developers — behind your identity provider.</span></div>
       <div><small>Runs on</small><b>The halls and hardware we build</b><span>Appliance in your data centre, private tenancy in a QORINAI hall, or the sovereign cloud — same platform, no re-platforming.</span></div>
