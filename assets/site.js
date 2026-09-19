@@ -151,7 +151,7 @@
   document.querySelectorAll('.fact b, .metric b, .proj .big b, .tier b').forEach(function (el) { io.observe(el); });
   var countSel = '.fact b, .metric b, .proj .big b, .tier b';
   function countUp(el) {
-    if (el.dataset.counted || !el.matches(countSel)) return;
+    if (el.dataset.counted || el.dataset.nocount || !el.matches(countSel)) return;
     var m = /^([^\d]*)(\d[\d,]*\.?\d*)(.*)$/s.exec(el.textContent.trim());
     if (!m) return;
     var target = parseFloat(m[2].replace(/,/g, '')), dec = (m[2].split('.')[1] || '').length;
