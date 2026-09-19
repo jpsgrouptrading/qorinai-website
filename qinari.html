@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Qinari — SPV Platform for AI Infrastructure Partnerships | QORINAI</title>
+<meta name="description" content="Qinari is QORINAI's special-purpose-vehicle platform: every partnership — a GPU cluster lease, a data-centre build, an overseas market — sits in its own ring-fenced SPV with its own assets, contracts, capital and returns.">
+<link rel="canonical" href="https://qorinai.ai/qinari.html">
+<link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<meta name="theme-color" content="#0D0D0D">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta property="og:type" content="website"><meta property="og:site_name" content="QORINAI"><meta property="og:url" content="https://qorinai.ai/qinari.html"><meta property="og:title" content="Qinari — SPV Platform | QORINAI"><meta property="og:description" content="One project, one vehicle. Every QORINAI partnership is ring-fenced in its own Qinari SPV — compute, infrastructure or overseas."><meta property="og:image" content="https://qorinai.ai/assets/img/og-qorinai.png"><meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Karla:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Cormorant+Garamond:wght@500;600&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+.qn-hero{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(28px,5vw,80px);align-items:center;margin-top:8px}
+.qn-card{background:#fff;border-radius:var(--r);padding:clamp(28px,4vw,56px);display:grid;place-items:center;box-shadow:0 40px 110px rgba(0,0,0,.5)}
+.qn-card img{width:min(100%,380px);display:block}
+.qn-word{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;letter-spacing:.06em}
+.qn-tag{font-family:var(--mono);font-size:11.5px;letter-spacing:.24em;text-transform:uppercase;color:#9AA1A8}
+@media (max-width:900px){.qn-hero{grid-template-columns:1fr}}
+.qn-spv{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:44px}
+.qn-spv > div{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:30px 28px;position:relative;overflow:hidden}
+section.alt .qn-spv > div{border-color:transparent}
+.qn-spv .badge-q{display:inline-flex;align-items:center;gap:10px;font-family:'Cormorant Garamond',Georgia,serif;font-size:22px;font-weight:600;letter-spacing:.04em;color:var(--text)}
+.qn-spv .badge-q i{width:8px;height:8px;border-radius:50%;background:#C9A24A;box-shadow:0 0 0 4px rgba(201,162,74,.18)}
+.qn-spv small{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-top:6px}
+.qn-spv h3{font-size:21px;font-weight:500;margin-top:16px}
+.qn-spv p{font-size:15px;color:var(--muted);margin-top:10px;line-height:1.55}
+.qn-spv ul{margin:14px 0 0;padding:0;list-style:none;display:grid;gap:8px;font-size:14.5px;color:var(--text-2)}
+.qn-spv li{padding-left:18px;position:relative}.qn-spv li::before{content:"";position:absolute;left:0;top:9px;width:8px;height:8px;border-radius:50%;background:#C9A24A}
+.qn-spv .ex{margin-top:18px;padding-top:14px;border-top:1px solid var(--line);font-family:var(--mono);font-size:11.5px;letter-spacing:.06em;color:var(--muted)}
+@media (max-width:900px){.qn-spv{grid-template-columns:1fr}}
+.qn-diag{margin-top:44px;border:1px solid var(--line);border-radius:var(--r);padding:28px;background:#fff;overflow-x:auto}
+.qn-diag svg{width:100%;min-width:760px;height:auto;display:block;font-family:'Instrument Sans',Karla,sans-serif}
+.qn-split{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:40px}
+.qn-split > div{border:1px solid var(--line);border-radius:var(--r);padding:28px;background:#fff}
+.qn-split small{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.qn-split h3{font-size:21px;margin-top:8px;font-weight:500}
+.qn-split ul{margin:16px 0 0;padding:0;list-style:none;display:grid;gap:10px;font-size:15px;color:var(--text-2)}
+.qn-split li{padding-left:20px;position:relative}.qn-split li::before{content:"";position:absolute;left:0;top:9px;width:8px;height:8px;border-radius:50%;background:var(--cyan)}
+.qn-split .gold li::before{background:#C9A24A}
+@media (max-width:760px){.qn-split{grid-template-columns:1fr}}
+.qn-world{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:40px}
+.qn-world div{padding:22px;border:1px solid rgba(255,255,255,.12);border-radius:var(--r-sm);background:rgba(255,255,255,.04)}
+.qn-world small{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#C9A24A;display:block}
+.qn-world b{display:block;font-family:var(--display);font-size:18px;font-weight:500;color:#fff;margin-top:8px}
+.qn-world span{display:block;font-size:14px;color:#9AA1A8;margin-top:6px;line-height:1.5}
+@media (max-width:900px){.qn-world{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body>
+<header class="nav" id="nav">
+  <div class="wrap"><div class="nav-bar">
+    <a class="brand" href="index.html" aria-label="QORINAI home"><svg viewBox="0 0 64 64" aria-hidden="true">
+  <rect x="6" y="4" width="52" height="46" rx="8" fill="#141719" stroke="#3A4045" stroke-width="2"/>
+  <rect x="12" y="10" width="40" height="34" rx="5" fill="#1C2023" stroke="#2A3035" stroke-width="1.5"/>
+  <rect x="2" y="20" width="4" height="14" rx="1" fill="#3A4045"/><rect x="58" y="20" width="4" height="14" rx="1" fill="#3A4045"/>
+  <g fill="#F3F5F6"><rect x="14" y="50" width="4" height="8" rx="1"/><rect x="21.5" y="50" width="4" height="8" rx="1"/><rect x="29" y="50" width="4" height="8" rx="1"/><rect x="36.5" y="50" width="4" height="8" rx="1"/><rect x="44" y="50" width="4" height="8" rx="1"/></g>
+  <text x="32" y="32.5" text-anchor="middle" font-family="Instrument Sans,Montserrat,ui-sans-serif,sans-serif" font-weight="700" font-size="14" fill="#F3F5F6" letter-spacing="0.5">QOR</text>
+</svg><span class="wordmark">QOR<span class="in">IN</span><span class="ai">AI</span></span></a>
+    <nav class="nav-links" aria-label="Primary"><a href="aidc.html">AIDC Chain</a><a href="services.html">Services</a><a href="hardware.html">Hardware</a><a href="intrallm.html">Software</a><a href="qinari.html" class="active">Qinari</a><a href="invest.html">Project Ironbark</a><a href="projects.html">Track Record</a><a href="hyperscalers.html">Strategic Shareholder</a><a href="about.html">About</a></nav>
+    <div class="nav-cta">
+      <a class="btn btn-white" href="contact.html">Contact us</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+    </div>
+  </div></div>
+</header>
+<main>
+<section class="page-hero"><img class="art" src="assets/photo/art-ribbons-wide.jpg" alt="" fetchpriority="high">
+  <div class="wrap">
+    <div class="crumbs"><a href="index.html">Home</a><span>/</span><span>Qinari</span></div>
+    <p class="eyebrow">Qinari · SPV platform</p>
+    <div class="qn-hero">
+      <div>
+        <h1>One project, one vehicle. Every partnership ring-fenced.</h1>
+        <p class="lede">QORINAI does not pool partners into one balance sheet. Each partnership — a GPU cluster and its lease, a data-centre build, a new country — is set up as its own special-purpose vehicle under the <span class="qn-word" style="font-size:1.15em;color:#fff">Qinari</span> platform name, with its own assets, contracts, capital, lenders and returns. QORINAI operates every vehicle; partners invest only in the one they choose.</p>
+        <div class="badges"><span class="badge">Ring-fenced assets &amp; liabilities</span><span class="badge">One partner set per SPV</span><span class="badge">Lender-ready structure</span><span class="badge">Australia and overseas</span></div>
+        <div class="ctas"><a class="btn btn-cyan" href="mailto:finance@qorinai.ai?subject=Qinari%20SPV%20%E2%80%94%20enquiry">Discuss a vehicle</a><a class="btn btn-ghost" href="#family">See the SPV family</a></div>
+      </div>
+      <div class="qn-card"><img src="assets/img/qinari-logo.png" alt="Qinari — Core in Fabric — the fabric of AI factories"></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="eyebrow">Why a vehicle per project</p>
+    <p class="statement">Infrastructure partners want to underwrite one asset, one contract set and one counterparty — <span class="ai">not a whole company.</span></p>
+    <ul class="feat">
+      <li><span class="k">01 · RING-FENCING</span><b>Risk stays where it belongs</b><p>A construction delay on one site, or a lease event on one cluster, cannot touch the assets or cash flows of another vehicle. Each SPV stands on its own.</p></li>
+      <li><span class="k">02 · CLEAN CAP TABLE</span><b>Partners invest at project level</b><p>An energy partner joins the infrastructure vehicle; an equipment financier joins the compute vehicle. Nobody is asked to take exposure to businesses they did not choose.</p></li>
+      <li><span class="k">03 · LENDER-READY</span><b>Single-purpose, asset-backed</b><p>Banks and equipment lenders underwrite a defined asset with a defined contract: GPUs and a lease, or land, power and a hosting agreement. No consolidation, no cross-default.</p></li>
+      <li><span class="k">04 · ALIGNMENT</span><b>Same vehicle, same outcome</b><p>QORINAI co-invests and operates each SPV under a services agreement, so the operator's return is tied to the same asset the partner owns.</p></li>
+      <li><span class="k">05 · JURISDICTION FIT</span><b>Incorporate where the asset is</b><p>An Australian Pty Ltd for Australian assets; a local vehicle for an overseas market, with the same governance template and QORINAI operating it.</p></li>
+      <li><span class="k">06 · EXIT OPTIONALITY</span><b>Sell, refinance or hold — one at a time</b><p>A vehicle can be refinanced once its asset is operating, or sold to an infrastructure buyer, without disturbing any other Qinari SPV or QORINAI itself.</p></li>
+    </ul>
+  </div>
+</section>
+
+<section class="alt" id="family">
+  <div class="wrap">
+    <p class="eyebrow">The Qinari family</p>
+    <h2 class="h2">Three kinds of vehicle. One name, one operator.</h2>
+    <p class="lede">Every SPV carries the Qinari name and a descriptor of what it holds. QORINAI Pty Ltd is the sponsor and operator of each one; project partners hold their interest in the vehicle that matches their capital.</p>
+    <div class="qn-spv">
+      <div>
+        <span class="badge-q"><i></i>Qinari Compute</span><small>GPU equipment · ownership &amp; lease</small>
+        <h3>Owns the cluster. Leases the compute.</h3>
+        <p>A vehicle that procures and owns a GPU fleet — for example an NVIDIA HGX B300 cluster — and leases it to the end customer or hosting operator on a multi-year contract. QORINAI deploys, manages and maintains the fleet under an O&amp;M agreement.</p>
+        <ul><li>Holds: servers, fabric, spares, warranties</li><li>Contracts: equipment lease or capacity agreement, O&amp;M with QORINAI</li><li>Funded by: equipment finance and partner equity</li><li>Returns: lease income over the term; residual value</li></ul>
+        <div class="ex">TYPICAL PARTNERS · EQUIPMENT FINANCIERS · GPU OWNERS · OFFTAKE CUSTOMERS</div>
+      </div>
+      <div>
+        <span class="badge-q"><i></i>Qinari Infrastructure</span><small>Data-centre development &amp; construction</small>
+        <h3>Holds the land, the power and the hall.</h3>
+        <p>A vehicle for a single data-centre project: site, grid connection, on-site generation and storage, and the building itself. The asset is leased or licensed to the operating business and its tenants; QORINAI develops, builds and operates it.</p>
+        <ul><li>Holds: land, connection rights, plant, buildings</li><li>Contracts: development management, construction, hosting or lease, O&amp;M with QORINAI</li><li>Funded by: partner equity, project or construction debt</li><li>Returns: hosting or lease income; asset re-rating</li></ul>
+        <div class="ex">TYPICAL PARTNERS · ENERGY COMPANIES · INFRASTRUCTURE FUNDS · EQUIPMENT-FOR-EQUITY SUPPLIERS</div>
+      </div>
+      <div>
+        <span class="badge-q"><i></i>Qinari International</span><small>Vehicles outside Australia</small>
+        <h3>The same model, incorporated where the partner is.</h3>
+        <p>QORINAI's chain — power, halls, hardware, operations and the IntraLLM platform — is replicable. For a market outside Australia we incorporate a local Qinari vehicle with a local partner, apply the same governance template, and operate it from Sydney with in-country teams.</p>
+        <ul><li>Holds: whatever the local project needs — compute, infrastructure or both</li><li>Contracts: local partner agreement, QORINAI services agreement, hardware supply</li><li>Funded by: local partner capital, export or development finance</li><li>Returns: to the partners of that vehicle only</li></ul>
+        <div class="ex">MARKETS IN VIEW · JAPAN · SINGAPORE · MALAYSIA · MIDDLE EAST</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="eyebrow">How it fits together</p>
+    <h2 class="h2">QORINAI operates. Qinari holds. Partners choose their vehicle.</h2>
+    <div class="qn-diag" aria-label="Structure diagram: QORINAI Pty Ltd sponsors and operates Qinari SPVs; partners, lenders and customers attach at vehicle level">
+      <svg viewBox="0 0 1200 460" xmlns="http://www.w3.org/2000/svg">
+        <defs><style>.h{font-size:13px;fill:#0D0D0D;font-weight:500}.m{font-size:11.5px;fill:#6B7075}.w{font-size:13px;fill:#fff;font-weight:500}.g{font-size:11.5px;fill:#9AA1A8}</style></defs>
+        <rect x="420" y="24" width="360" height="74" rx="10" fill="#0D0D0D"/><text x="600" y="55" text-anchor="middle" class="w">QORINAI Pty Ltd</text><text x="600" y="76" text-anchor="middle" class="g">Sponsor · developer · operator · IntraLLM platform</text>
+        <line x1="600" y1="98" x2="600" y2="140" stroke="#0D0D0D" stroke-width="2"/>
+        <rect x="300" y="140" width="600" height="48" rx="10" fill="#F7F1E3" stroke="#C9A24A"/><text x="600" y="164" text-anchor="middle" font-family="Cormorant Garamond,Georgia,serif" font-size="22" font-weight="600" fill="#0D0D0D" letter-spacing="1">Qinari</text><text x="600" y="180" text-anchor="middle" class="m">SPV platform · one vehicle per project · common governance template</text>
+        <line x1="600" y1="188" x2="600" y2="215" stroke="#C9A24A" stroke-width="2"/><line x1="200" y1="215" x2="1000" y2="215" stroke="#C9A24A" stroke-width="2"/>
+        <line x1="200" y1="215" x2="200" y2="245" stroke="#C9A24A" stroke-width="2"/><line x1="600" y1="215" x2="600" y2="245" stroke="#C9A24A" stroke-width="2"/><line x1="1000" y1="215" x2="1000" y2="245" stroke="#C9A24A" stroke-width="2"/>
+        <g>
+          <rect x="60" y="245" width="280" height="84" rx="10" fill="#fff" stroke="#C9A24A" stroke-width="1.5"/><text x="200" y="272" text-anchor="middle" class="h">Qinari Compute SPV</text><text x="200" y="292" text-anchor="middle" class="m">Owns GPU cluster · leases compute</text><text x="200" y="310" text-anchor="middle" class="m">O&amp;M by QORINAI</text>
+          <rect x="460" y="245" width="280" height="84" rx="10" fill="#fff" stroke="#C9A24A" stroke-width="1.5"/><text x="600" y="272" text-anchor="middle" class="h">Qinari Infrastructure SPV</text><text x="600" y="292" text-anchor="middle" class="m">Land · power · hall · hosting</text><text x="600" y="310" text-anchor="middle" class="m">Developed &amp; operated by QORINAI</text>
+          <rect x="860" y="245" width="280" height="84" rx="10" fill="#fff" stroke="#C9A24A" stroke-width="1.5"/><text x="1000" y="272" text-anchor="middle" class="h">Qinari International SPV</text><text x="1000" y="292" text-anchor="middle" class="m">Local vehicle · local partner</text><text x="1000" y="310" text-anchor="middle" class="m">Same template, operated from Sydney</text>
+        </g>
+        <g stroke="#9AA1A8" stroke-width="1.5" stroke-dasharray="4 4"><line x1="200" y1="329" x2="200" y2="372"/><line x1="600" y1="329" x2="600" y2="372"/><line x1="1000" y1="329" x2="1000" y2="372"/></g>
+        <g>
+          <rect x="40" y="372" width="150" height="60" rx="8" fill="#F5F6F7" stroke="#D9DCDF"/><text x="115" y="397" text-anchor="middle" class="h">Partner equity</text><text x="115" y="415" text-anchor="middle" class="m">financier · GPU owner</text>
+          <rect x="210" y="372" width="150" height="60" rx="8" fill="#F5F6F7" stroke="#D9DCDF"/><text x="285" y="397" text-anchor="middle" class="h">Lender</text><text x="285" y="415" text-anchor="middle" class="m">equipment finance</text>
+          <rect x="440" y="372" width="150" height="60" rx="8" fill="#F5F6F7" stroke="#D9DCDF"/><text x="515" y="397" text-anchor="middle" class="h">Partner equity</text><text x="515" y="415" text-anchor="middle" class="m">energy · infra fund</text>
+          <rect x="610" y="372" width="150" height="60" rx="8" fill="#F5F6F7" stroke="#D9DCDF"/><text x="685" y="397" text-anchor="middle" class="h">Lender</text><text x="685" y="415" text-anchor="middle" class="m">project / construction debt</text>
+          <rect x="840" y="372" width="150" height="60" rx="8" fill="#F5F6F7" stroke="#D9DCDF"/><text x="915" y="397" text-anchor="middle" class="h">Local partner</text><text x="915" y="415" text-anchor="middle" class="m">capital · site · customers</text>
+          <rect x="1010" y="372" width="150" height="60" rx="8" fill="#F5F6F7" stroke="#D9DCDF"/><text x="1085" y="397" text-anchor="middle" class="h">Lender</text><text x="1085" y="415" text-anchor="middle" class="m">export / development finance</text>
+        </g>
+        <text x="600" y="452" text-anchor="middle" class="m">Each vehicle has its own shareholders, contracts, debt and reporting. No cross-collateralisation between vehicles. Schematic.</text>
+      </svg>
+    </div>
+    <div class="qn-split">
+      <div class="gold"><small>Sits in the Qinari SPV</small><h3>The asset and its contracts</h3><ul><li>Legal title to the equipment, land, plant or building</li><li>Customer contracts: lease, capacity agreement or hosting agreement</li><li>Project debt and security over the vehicle's own assets</li><li>Partner shareholdings and the shareholders' agreement</li><li>Ring-fenced bank accounts and monthly reporting</li></ul></div>
+      <div><small>Stays with QORINAI</small><h3>The people, the platform and the IP</h3><ul><li>Engineering, deployment and 24×7 operations teams</li><li>The IntraLLM platform and QORINAI's methods and designs</li><li>Hardware supply relationship through strategic shareholder Hyperscalers</li><li>Development-management, O&amp;M and services agreements with each vehicle</li><li>A co-investment in each vehicle alongside partners</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <p class="eyebrow">From term sheet to operating vehicle</p>
+    <h2 class="h2">Five steps, the same every time.</h2>
+    <div class="steps">
+      <div class="step"><span class="n">01</span><div><h3>Define the vehicle</h3><p>Scope of assets, counterparties, jurisdiction and term. Compute, infrastructure or international — and which partners sit in it.</p></div></div>
+      <div class="step"><span class="n">02</span><div><h3>Incorporate and govern</h3><p>Company incorporated under the Qinari name; shareholders' agreement on the common template: board, reserved matters, reporting, distributions, exit.</p></div></div>
+      <div class="step"><span class="n">03</span><div><h3>Contract the asset</h3><p>Supply and construction on the way in; lease, capacity or hosting agreement on the way out; development-management and O&amp;M with QORINAI; finance documents with lenders.</p></div></div>
+      <div class="step"><span class="n">04</span><div><h3>Operate and report</h3><p>QORINAI runs the asset. The vehicle reports monthly to its shareholders and lenders: utilisation, availability, revenue, cost, covenants.</p></div></div>
+      <div class="step"><span class="n">05</span><div><h3>Refinance, hold or exit</h3><p>Once operating, the vehicle can be refinanced on its own cash flows, held for yield, or sold — one vehicle at a time.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="dark">
+  <div class="wrap">
+    <p class="eyebrow">Beyond Australia</p>
+    <h2 class="h2">The chain is built to be replicated.</h2>
+    <p class="lede">Power first, liquid-cooled halls, open-OEM hardware, 24×7 GPU operations and a private-AI platform are not Australia-specific. Qinari International vehicles let a partner bring that chain to their own market with QORINAI as operator and a local company as the asset owner.</p>
+    <div class="qn-world">
+      <div><small>Structure</small><b>Local company, common template</b><span>Incorporated in the partner's jurisdiction; same shareholders' agreement, reporting and governance as an Australian vehicle.</span></div>
+      <div><small>Roles</small><b>Partner owns, QORINAI operates</b><span>The local partner brings capital, site or customers; QORINAI brings design, hardware supply, deployment, operations and IntraLLM.</span></div>
+      <div><small>Hardware</small><b>Open-OEM, exportable</b><span>Systems configured and tested in Australia through Hyperscalers, or supplied in-country through its channel — same platforms, same warranty model.</span></div>
+      <div><small>Markets in view</small><b>Asia-Pacific and the Middle East</b><span>Conversations are under way in Japan, Singapore and Malaysia; sovereign-compute demand in the Middle East fits the same model.</span></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="eyebrow">Questions partners ask</p>
+    <h2 class="h2">Frequently asked.</h2>
+    <div class="faq">
+      <details><summary>Who owns a Qinari SPV?</summary><p>The partners who invest in that specific vehicle, alongside a QORINAI co-investment. Ownership is set out in the vehicle's shareholders' agreement and does not extend to any other vehicle or to QORINAI Pty Ltd.</p></details>
+      <details><summary>How does QORINAI earn from a vehicle?</summary><p>Through its co-investment and through the services it provides to the vehicle — development management, deployment, operations and maintenance — under arm's-length agreements disclosed to all shareholders. Terms are set per vehicle.</p></details>
+      <details><summary>Can a partner join one vehicle and not others?</summary><p>Yes — that is the point of the structure. An equipment financier can hold a compute vehicle without any exposure to a construction project, and vice versa.</p></details>
+      <details><summary>What do lenders see?</summary><p>A single-purpose company with defined assets, a defined revenue contract and security limited to that vehicle. No consolidation with QORINAI and no cross-default with other Qinari vehicles.</p></details>
+      <details><summary>Why the name Qinari?</summary><p>Qinari — "core in fabric" — names the vehicles that hold the physical core QORINAI builds and operates. Each SPV is one thread; together they are the fabric of AI factories.</p></details>
+    </div>
+    <p class="cp-note" style="font-size:13px;color:var(--muted);line-height:1.6;max-width:110ch;margin-top:40px;padding-top:20px;border-top:1px solid var(--line)">This page describes QORINAI's general approach to structuring partnerships. It is not an offer or a commitment to establish any vehicle. Terms, jurisdictions, shareholdings and economics are agreed per vehicle and documented under NDA.</p>
+  </div>
+</section>
+
+<div class="cta-band">
+  <div class="wrap">
+    <div><h2>Tell us which vehicle fits.</h2><p>Compute, infrastructure or a market outside Australia — we will scope the SPV, the counterparties and the timeline.</p></div>
+    <a class="btn btn-cyan" href="mailto:finance@qorinai.ai?subject=Qinari%20SPV%20%E2%80%94%20enquiry">finance@qorinai.ai</a>
+  </div>
+</div>
+
+</main>
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <a class="brand" href="index.html"><svg viewBox="0 0 64 64" aria-hidden="true">
+  <rect x="6" y="4" width="52" height="46" rx="8" fill="#141719" stroke="#3A4045" stroke-width="2"/>
+  <rect x="12" y="10" width="40" height="34" rx="5" fill="#1C2023" stroke="#2A3035" stroke-width="1.5"/>
+  <rect x="2" y="20" width="4" height="14" rx="1" fill="#3A4045"/><rect x="58" y="20" width="4" height="14" rx="1" fill="#3A4045"/>
+  <g fill="#F3F5F6"><rect x="14" y="50" width="4" height="8" rx="1"/><rect x="21.5" y="50" width="4" height="8" rx="1"/><rect x="29" y="50" width="4" height="8" rx="1"/><rect x="36.5" y="50" width="4" height="8" rx="1"/><rect x="44" y="50" width="4" height="8" rx="1"/></g>
+  <text x="32" y="32.5" text-anchor="middle" font-family="Instrument Sans,Montserrat,ui-sans-serif,sans-serif" font-weight="700" font-size="14" fill="#F3F5F6" letter-spacing="0.5">QOR</text>
+</svg><span class="wordmark">QOR<span class="in">IN</span><span class="ai">AI</span></span></a>
+        <ul class="meaning"><li><b>QOR</b><span>the core — the chip, the hall, the physical heart</span></li><li><b class="in">IN</b><span>the intelligence layer that connects it</span></li><li><b class="ai">AI</b><span>what runs on top</span></li></ul><p>QORINAI builds and operates all three.</p>
+      </div>
+      <div><h4>AIDC chain</h4><ul><li><a href="aidc.html#power">Land &amp; power</a></li><li><a href="aidc.html#design">Design &amp; build</a></li><li><a href="aidc.html#deploy">Cluster deployment</a></li><li><a href="aidc.html#operate">GPU operations</a></li><li><a href="aidc.html#cloud">Sovereign cloud</a></li></ul></div>
+      <div><h4>Services</h4><ul><li><a href="services.html#build">Infrastructure development</a></li><li><a href="services.html#dc">Data centre services</a></li><li><a href="services.html#compute">Compute &amp; cloud</a></li><li><a href="services.html#managed">Managed &amp; professional</a></li><li><a href="services.html#industries">Industries</a></li><li><a href="intrallm.html">Software · IntraLLM</a></li></ul></div>
+      <div><h4>Hardware</h4><ul><li><a href="hardware.html#gpu">GPU servers</a></li><li><a href="hardware.html#rack">Rack-scale systems</a></li><li><a href="hardware.html#network">Networking</a></li><li><a href="hardware.html#storage">Storage</a></li><li><a href="hardware.html#roadmap">Next generation · Rubin-ready</a></li><li><a href="hardware.html#catalogue">Full catalogue</a></li></ul></div>
+      <div><h4>Company</h4><ul><li><a href="about.html">About QORINAI</a></li><li><a href="projects.html">Track record</a></li><li><a href="invest.html">Invest · Project Ironbark</a></li><li><a href="campus.html">Flagship project · technical</a></li><li><a href="hyperscalers.html">Strategic shareholder</a></li><li><a href="qinari.html">Qinari · SPV platform</a></li><li><a href="insights/">Insights</a></li><li><a href="about.html#faq">FAQ</a></li><li><a href="contact.html">Contact</a></li><li><a href="mailto:finance@qorinai.ai">finance@qorinai.ai</a></li></ul></div>
+    </div>
+    <div class="legal">
+      <span>© 2026 QORINAI Pty Ltd · A/200 Bourke Rd, Alexandria NSW 2015, Australia · <a href="mailto:finance@qorinai.ai" style="color:inherit">finance@qorinai.ai</a></span>
+      <span>Privacy · Terms · Specifications indicative and subject to final design · Photography: Unsplash (placeholder)</span>
+    </div>
+  </div>
+</footer>
+<script src="assets/site.js"></script>
+</body>
+</html>
