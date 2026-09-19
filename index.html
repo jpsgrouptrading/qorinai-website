@@ -28,6 +28,18 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Karla:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <link rel="stylesheet" href="assets/style.css">
+<style>
+.cp-photo{margin-top:36px;border-radius:var(--r);overflow:hidden;aspect-ratio:21/9;background:var(--ink);position:relative}
+.cp-photo img{width:100%;height:100%;object-fit:cover;object-position:center 35%;display:block;filter:saturate(.75)}
+.cp-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(13,13,13,.1),rgba(13,13,13,.55))}
+.cp-photo span{position:absolute;left:22px;bottom:18px;font-family:var(--mono);font-size:11.5px;letter-spacing:.08em;color:#fff;text-shadow:0 1px 8px rgba(0,0,0,.6)}
+@media (max-width:640px){.cp-photo{aspect-ratio:16/10}}
+.cp-below{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(28px,5vw,72px);align-items:start;margin-top:40px}
+.cp-below .metrics{grid-template-columns:1fr 1fr;gap:12px}
+.cp-below .metric{border:1px solid var(--line)}
+.cp-below .metric b{font-size:clamp(24px,2.3vw,32px);white-space:nowrap}
+@media (max-width:900px){.cp-below{grid-template-columns:1fr}}
+</style>
 </head>
 <body>
 <header class="nav" id="nav">
@@ -39,7 +51,7 @@
   <g fill="#F3F5F6"><rect x="14" y="50" width="4" height="8" rx="1"/><rect x="21.5" y="50" width="4" height="8" rx="1"/><rect x="29" y="50" width="4" height="8" rx="1"/><rect x="36.5" y="50" width="4" height="8" rx="1"/><rect x="44" y="50" width="4" height="8" rx="1"/></g>
   <text x="32" y="32.5" text-anchor="middle" font-family="Instrument Sans,Montserrat,ui-sans-serif,sans-serif" font-weight="700" font-size="14" fill="#F3F5F6" letter-spacing="0.5">QOR</text>
 </svg><span class="wordmark">QOR<span class="in">IN</span><span class="ai">AI</span></span></a>
-    <nav class="nav-links" aria-label="Primary"><a href="aidc.html">AIDC Chain</a><a href="services.html">Services</a><a href="hardware.html">Hardware</a><a href="intrallm.html">Software</a><a href="projects.html">Track Record</a><a href="hyperscalers.html">Strategic Shareholder</a><a href="about.html">About</a></nav>
+    <nav class="nav-links" aria-label="Primary"><a href="aidc.html">AIDC Chain</a><a href="services.html">Services</a><a href="hardware.html">Hardware</a><a href="intrallm.html">Software</a><a href="invest.html">Project Ironbark</a><a href="projects.html">Track Record</a><a href="hyperscalers.html">Strategic Shareholder</a><a href="about.html">About</a></nav>
     <div class="nav-cta">
       <a class="btn btn-white" href="contact.html">Contact us</a>
       <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
@@ -64,7 +76,7 @@
         <div class="hero-facts">
           <div class="fact"><b>26 MW+</b><span>delivered by our delivery partners</span></div>
           <div class="fact"><b>250 kW</b><span>per rack design point — Rubin-ready</span></div>
-          <div class="fact"><b>PUE ≤ 1.2</b><span>design target, liquid-cooled halls</span></div>
+          <div class="fact"><b>GW-class</b><span>campus in masterplanning</span></div>
           <div class="fact"><b>100 %</b><span>Australian owned &amp; operated</span></div>
         </div>
       </div>
@@ -78,6 +90,27 @@
 </ul></div>
 
 <!-- ===== CHAIN ===== -->
+<!-- ===== FLAGSHIP PROJECT ===== -->
+<section id="flagship">
+  <div class="wrap">
+    <p class="eyebrow">Flagship project · Victoria</p>
+    <h2 class="h2">A gigawatt AI campus designed around its power.</h2>
+    <div class="cp-photo"><img src="assets/photo/skyline-gold.jpg" alt="Melbourne skyline at golden hour" loading="lazy"><span>MELBOURNE · NORTHERN GROWTH CORRIDOR</span></div>
+    <div class="cp-below">
+      <div>
+        <p class="lede">A greenfield freehold beside a 500 kV corridor in Melbourne's northern growth corridor, with a formal 1,000 MW transmission response already in hand. Four repeatable 250 MW modules, a new 500 kV terminal station, gas firming and 500 MWh of battery storage — the power process was run first, so the campus can be.</p>
+        <div class="ctas"><a class="btn btn-primary" href="invest.html">For investors</a><a class="btn btn-ghost" href="campus.html">Technical overview</a><a class="btn btn-ghost" href="mailto:finance@qorinai.ai?subject=Teaser%20request%20%E2%80%94%20Project%20Ironbark">Request the teaser</a></div>
+      </div>
+      <div class="metrics" style="margin-top:0">
+        <div class="metric"><small>Connection</small><b>1,000 MW</b><span>assessed feasible</span></div>
+        <div class="metric"><small>Modules</small><b>4 × 250 MW</b><span>repeatable to 1 GW</span></div>
+        <div class="metric"><small>Storage</small><b>500 MWh</b><span>grid-forming BESS</span></div>
+        <div class="metric"><small>Programme</small><b>36 months</b><span>to first energisation</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section>
   <div class="wrap">
     <p class="eyebrow">The AIDC chain</p>
@@ -218,7 +251,7 @@
     <p class="eyebrow">Where we are</p>
     <h2 class="h2">Sydney-led, national by design.</h2>
     <div class="locs">
-      <div class="loc"><img class="art" src="assets/photo/yarra.jpg" alt="" loading="lazy"><small>Engineering · Victoria</small><h3>Melbourne</h3><p>Engineering, design and campus development for Victoria.</p></div>
+      <div class="loc"><img class="art" src="assets/photo/yarra.jpg" alt="" loading="lazy"><small>Engineering · Victoria</small><h3>Melbourne</h3><p>Engineering and the flagship gigawatt-class campus programme in the state's north.</p></div>
       <div class="loc"><img class="art" src="assets/photo/sydney.jpg" alt="" loading="lazy"><small>Head office · NSW</small><h3>Sydney</h3><p>Headquarters at A/200 Bourke Rd, Alexandria. Partner-delivered high-density, modular and liquid-cooled projects across Greater Sydney and regional NSW.</p></div>
       <div class="loc"><img class="art" src="assets/photo/canberra.jpg" alt="" loading="lazy"><small>Hardware &amp; lab · ACT</small><h3>Canberra</h3><p>Hyperscalers' manufacturing, local stock and HyperLabs test-drive facility.</p></div>
     </div>
@@ -249,7 +282,7 @@
       <div><h4>AIDC chain</h4><ul><li><a href="aidc.html#power">Land &amp; power</a></li><li><a href="aidc.html#design">Design &amp; build</a></li><li><a href="aidc.html#deploy">Cluster deployment</a></li><li><a href="aidc.html#operate">GPU operations</a></li><li><a href="aidc.html#cloud">Sovereign cloud</a></li></ul></div>
       <div><h4>Services</h4><ul><li><a href="services.html#build">Infrastructure development</a></li><li><a href="services.html#dc">Data centre services</a></li><li><a href="services.html#compute">Compute &amp; cloud</a></li><li><a href="services.html#managed">Managed &amp; professional</a></li><li><a href="services.html#industries">Industries</a></li><li><a href="intrallm.html">Software · IntraLLM</a></li></ul></div>
       <div><h4>Hardware</h4><ul><li><a href="hardware.html#gpu">GPU servers</a></li><li><a href="hardware.html#rack">Rack-scale systems</a></li><li><a href="hardware.html#network">Networking</a></li><li><a href="hardware.html#storage">Storage</a></li><li><a href="hardware.html#roadmap">Next generation · Rubin-ready</a></li><li><a href="hardware.html#catalogue">Full catalogue</a></li></ul></div>
-      <div><h4>Company</h4><ul><li><a href="about.html">About QORINAI</a></li><li><a href="projects.html">Track record</a></li><li><a href="hyperscalers.html">Strategic shareholder</a></li><li><a href="insights/">Insights</a></li><li><a href="about.html#faq">FAQ</a></li><li><a href="contact.html">Contact</a></li><li><a href="mailto:finance@qorinai.ai">finance@qorinai.ai</a></li></ul></div>
+      <div><h4>Company</h4><ul><li><a href="about.html">About QORINAI</a></li><li><a href="projects.html">Track record</a></li><li><a href="invest.html">Invest · Project Ironbark</a></li><li><a href="campus.html">Flagship project · technical</a></li><li><a href="hyperscalers.html">Strategic shareholder</a></li><li><a href="insights/">Insights</a></li><li><a href="about.html#faq">FAQ</a></li><li><a href="contact.html">Contact</a></li><li><a href="mailto:finance@qorinai.ai">finance@qorinai.ai</a></li></ul></div>
     </div>
     <div class="legal">
       <span>© 2026 QORINAI Pty Ltd · A/200 Bourke Rd, Alexandria NSW 2015, Australia · <a href="mailto:finance@qorinai.ai" style="color:inherit">finance@qorinai.ai</a></span>

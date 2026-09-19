@@ -23,6 +23,7 @@
     document.getElementById('sent').hidden = false; form.querySelector('button[type=submit]').disabled = true;
   });
 
+
   /* ---------- hero headline: word-by-word rise ---------- */
   var title = document.getElementById('heroTitle');
   if (title) {
